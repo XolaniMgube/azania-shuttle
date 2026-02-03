@@ -1,31 +1,32 @@
 body {
   padding-top: 80px;
   /* font-family: "Segoe UI", sans-serif; */
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-family: "Playfair Display", Georgia, serif;
 }
 
 .hero-section {
   background-image:
     linear-gradient(
       to right,
-      rgba(248, 246, 242, 0.97) 0%,
-      rgba(248, 246, 242, 0.85) 40%,
-      rgba(255, 255, 255, 0.35) 70%
+      rgba(248, 246, 242, 0.77) 0%,
+      rgba(248, 246, 242, 0.65) 40%,
+      rgba(255, 255, 255, 0.15) 70%
     ),
     url("images/azania-hero-backgrond.png");
 
   background-size: cover;
-  background-position: center 60%;
+  background-position: 10% 60%;
   background-repeat: no-repeat;
 
-  min-height: 65vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
 }
 
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -58,25 +59,20 @@ body {
 .trust-bar {
   background: #faf9f7;
   padding: 30px 0;
-
-  /* Overlap hero section */
   margin-top: -60px;
-
   position: relative;
   z-index: 3;
-
   border-radius: 14px;
 }
 
-/* Individual trust cards */
+/* Trust card */
 .trust-item {
-  padding: 18px 12px;
-  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
 
-  font-weight: 500;
-  font-size: 0.95rem;
-  color: #1f2933;
-  text-align: center;
+  padding: 20px 18px;
+  /* border-radius: 12px; */
 
   background: #ffffff;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
@@ -84,38 +80,60 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Hover polish (optional but nice) */
 .trust-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Subtle variation per item */
-.trust-1 {
-  background: #ffffff;
+/* Icon */
+.trust-icon {
+  flex-shrink: 0;
 }
 
-.trust-2 {
-  background: #f6f4ef;
+.trust-icon img {
+  width: 36px;
+  height: 36px;
 }
 
-.trust-3 {
-  background: #f3efe8;
+/* Text */
+.trust-content h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1f2933;
 }
 
-.trust-4 {
-  background: #f8f6f2;
+.trust-content p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #6b7280;
 }
 
-/* Gold accent line */
+/* Gold accent */
 .trust-item::before {
   content: "";
-  display: block;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 3px;
+  width: 100%;
   background: #b48a44;
-  border-radius: 10px 10px 0 0;
-  margin-bottom: 10px;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Subtle colour variation */
+.trust-1 { 
+  background: #ffffff; ; 
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.trust-2 { background: #f6f4ef; }
+.trust-3 { background: #f3efe8; }
+.trust-4 {
+  background: #f8f6f2;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 /* Mobile refinement */
@@ -126,10 +144,165 @@ body {
   }
 
   .trust-item {
-    font-size: 0.9rem;
-    padding: 16px 10px;
+    padding: 18px 16px;
   }
 }
+
+
+
+
+/* ================= ABOUT SECTION ================= */
+
+#about {
+  position: relative;
+
+  /* Background image + soft overlay */
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(250, 249, 247, 0.96) 0%,
+      rgba(250, 249, 247, 0.92) 50%,
+      rgba(250, 249, 247, 0.95) 100%
+    ),
+    url("images/azania-about-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Text column styling */
+#about .col-lg-6:first-child {
+  /* background: rgba(255, 255, 255, 0.85); */
+  /* padding: 32px; */
+  border-radius: 14px;
+}
+
+/* About heading */
+#about h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* About paragraph */
+#about p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Checklist */
+#about .check-list li {
+  font-size: 0.95rem;
+}
+
+/* About image */
+#about img {
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Button spacing */
+#about .btn {
+  margin-top: 12px;
+}
+
+/* Mobile refinement */
+@media (max-width: 991px) {
+  #about .col-lg-6:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #about {
+    background-position: center top;
+  }
+
+  #about .col-lg-6:first-child {
+    padding: 24px;
+  }
+}
+
+
+
+/* ================= SERVICES ================= */
+
+.services-section {
+  background: #f8f9fb;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 20px 16px;
+  border-radius: 12px;
+  height: 100%;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Header (icon + title) */
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.service-header img {
+  width: 60px;
+  height: 60px;
+}
+
+.service-header h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Description */
+.service-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+/* Button */
+.btn-service {
+  background: #1b3456; /* blue like design */
+  color: #ffffff;
+  font-size: 0.90rem;
+  padding: 8px 34px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-service:hover {
+  background: #1e40af;
+  color: #ffffff;
+}
+
+/* Mobile tweaks */
+@media (max-width: 767px) {
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .service-header img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
 
 
 
@@ -153,18 +326,6 @@ body {
   position: absolute;
   left: 0;
   color: #b48a44;
-}
-
-.service-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  height: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.service-card h5 {
-  font-weight: 600;
 }
 
 .why-section {
