@@ -12,12 +12,15 @@
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+  <!-- Bootstrap Icons (CRITICAL) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css" />
@@ -39,7 +42,8 @@
 
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#why">Why Choose Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-gold ms-lg-2" href="#contact">Contact Us</a></li>
@@ -49,265 +53,544 @@
   </nav>
 
   <!-- ================= HERO ================= -->
-  <section class="hero-section d-flex align-items-center">
+  <section id="hero" class="hero-section">
     <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-8 text-center text-lg-start">
-          <h1 class="hero-title">
-            Reliable Shuttle Services,<br />
-            <span>Nationwide Reach</span>
+      <div class="row align-items-center">
+        <div class="col-lg-7 hero-content">
+
+          <span class="hero-eyebrow animate animate-delay-1">
+            Professional Shuttle Brokerage
+          </span>
+
+          <h1 class="hero-title animate animate-delay-2">
+            Reliable Shuttle Services<br />
+            <span>With Nationwide Reach</span>
           </h1>
-          <p class="hero-text">
-            Connecting South Africans to verified shuttle operators
+
+          <p class="hero-text animate animate-delay-3">
+            We connect organisations, corporates, and communities
+            to fully vetted shuttle operators across South Africa.
           </p>
 
-          <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-            <a href="#contact" class="btn btn-gold btn-lg">
-              Why Choose Us ?
+          <div class="hero-actions animate animate-delay-4">
+            <a href="#why" class="btn btn-gold btn-lg">
+              Why Choose Us
             </a>
-            <!-- <a href="tel:0782000946" class="btn btn-outline-dark btn-lg">
-              What We Do
-            </a> -->
+            <a href="#services" class="btn btn-outline-dark btn-lg">
+              Our Services
+            </a>
           </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= TRUST BAR ================= -->
-  <!-- <section class="trust-bar">
-  <div class="container">
-    <div class="row g-0">
-      
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="trust-item trust-1">
-          <div class="trust-icon">
-            <img src="images/icons/trusted-network.svg" alt="">
-          </div>
-          <div class="trust-content">
-            <h6>Trusted Network</h6>
-            <p>Access to vetted, licensed shuttle operators</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="trust-item trust-2">
-          <div class="trust-icon">
-            <img src="images/icons/compliance.svg" alt="">
-          </div>
-          <div class="trust-content">
-            <h6>Strict Compliance</h6>
-            <p>Fully licensed, insured and roadworthy vehicles</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="trust-item trust-3">
-          <div class="trust-icon">
-            <img src="images/icons/nationwide.svg" alt="">
-          </div>
-          <div class="trust-content">
-            <h6>Nationwide Coverage</h6>
-            <p>One broker for transport across South Africa</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="trust-item trust-4">
-          <div class="trust-icon">
-            <img src="images/icons/coordination.svg" alt="">
-          </div>
-          <div class="trust-content">
-            <h6>Easy Coordination</h6>
-            <p>Centralised bookings and trip management</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section> -->
-
-
-
   <!-- ================= ABOUT ================= -->
-  <section id="about" class="section-padding">
+  <section id="about" class="section-padding about-section py-5">
     <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-8">
-          <h2>About Azania Shuttle Brokers</h2>
-          <p>
-            Azania Shuttle Brokers is a professional transport brokerage company specializing in connecting passengers,
-            organizations, and corporate clients with verified, fully compliant shuttle service operators across South
-            Africa.
+      <div class="row align-items-center gy-5">
+
+        <!-- TEXT CONTENT -->
+        <div class="col-lg-7">
+          <span class="about-eyebrow">Who We Are</span>
+
+          <h2 class="about-title">
+            Trusted Shuttle Brokerage,<br />
+            <span>Built for South Africa</span>
+          </h2>
+
+          <p class="about-lead">
+            Azania Shuttle Brokers is a professional transport brokerage company connecting
+            passengers, organisations, and corporate clients with verified, fully compliant
+            shuttle operators nationwide.
           </p>
 
-          <p>We act as a trusted link between clients who require safe, efficient, and reliable shuttle transport, and
-            licensed transport providers who meet our high standards of service and compliance. Our goal is to simplify
-            transport coordination while ensuring quality, affordability, and safety for every trip.</p>
+          <p class="about-text">
+            We serve as a trusted link between clients who require safe, efficient, and
+            reliable transport, and licensed operators who meet strict service and
+            compliance standards. Our focus is simple — coordinated transport done right.
+          </p>
 
-
-          <ul class="check-list">
-            <li>Network of licensed shuttle operators</li>
-            <li>Strict safety and compliance standards</li>
-            <li>Centralised booking nationwide</li>
+          <ul class="about-features">
+            <li>Nationwide network of licensed shuttle operators</li>
+            <li>Strict safety, compliance, and verification standards</li>
+            <li>Centralised booking and coordination</li>
           </ul>
 
-          <a href="#" class="btn btn-gold mt-3">
-            More About Us
+          <a href="#contact" class="btn btn-gold about-btn">
+            Reach Out to Us
           </a>
         </div>
 
-        <div class="col-lg-4 text-center">
-          <!-- ABOUT IMAGE PLACEHOLDER -->
-          <img src="images/about-us.png" alt="Professional Shuttle Service" class="img-fluid rounded" />
+        <!-- IMAGE BLOCK -->
+        <div class="col-lg-5">
+          <div class="about-image-wrapper">
+            <img src="images/about-us-3.png" alt="Professional Shuttle Service" class="img-fluid" />
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
+
   <!-- ================= SERVICES ================= -->
-<section id="services" class="section-padding services-section">
-  <div class="container">
-    <h2 class="text-center mb-5">Our Services</h2>
+  <section id="services" class="section-padding services-section py-5">
+    <div class="container">
+      <span class="about-eyebrow" style="width: 100%; text-align: center;">What We Do</span>
+      <h2 class="text-center mb-5">Our Services</h2>
 
-    <div class="row gy-4">
-      <!-- Service 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card">
-          <div class="service-header">
-            <img src="images/icons/icon-1;.png" alt="Staff & Corporate">
-            <h5>Staff & Corporate</h5>
+      <div class="row gy-4">
+
+        <!-- Service 1: Staff & Corporate -->
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card">
+
+            <div class="service-image">
+              <img src="images/staff-corporate.png" alt="Staff and Corporate Shuttle Services">
+            </div>
+
+            <div class="service-body">
+              <div class="service-header">
+                <div class="service-icon">
+                  <span class="bi bi-bus-front"></span>
+                </div>
+                <h5>Staff & Corporate Shuttles</h5>
+              </div>
+
+              <p>
+                <b>Staff Shuttles</b>: Daily transport services for employees between home, office, and other work
+                locations.
+              </p>
+              <p>
+                <b>Corporate Shuttles</b>: Tailored transportation solutions for businesses (including airport
+                transfers, events, client visits, and inter-office travel).
+              </p>
+              <p>
+                We connect you with verified shuttle owners who will make sure that employees and the staff travel well
+                and safe from the work place to their point of departure.
+              </p>
+
+              <ul class="service-tags">
+                <li>Staff Transport</li>
+                <li>Corporate Travel</li>
+                <li>Airport Transfers</li>
+              </ul>
+
+              <!-- <a href="#" class="service-link">
+              Explore this service →
+            </a> -->
+            </div>
+
           </div>
-          <p>Reliable daily and corporate shuttle solutions.</p>
-          <a href="#" class="btn btn-service">Learn More →</a>
         </div>
-      </div>
 
-      <!-- Service 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card">
-          <div class="service-header">
-            <img src="images/icons/tourism-events.svg" alt="Tourism & Events">
-            <h5>Tourism & Events</h5>
+        <!-- Service 2: Tourism & Events -->
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card">
+
+            <div class="service-image">
+              <img src="images/tourism-events.png" alt="Tourism and Event Shuttle Services">
+            </div>
+
+            <div class="service-body">
+              <div class="service-header">
+                <div class="service-icon">
+                  <span class="bi bi-geo-alt"></span>
+                </div>
+                <h5>Tourism & Event Shuttles</h5>
+              </div>
+
+              <p>
+                <b>Tourism Shuttles</b>: Transport for tourists between airports, hotels, attractions, lodges, and tour
+                destinations.
+              </p>
+
+              <p>
+                <b>Event Shuttles</b>: Transport for guests attending weddings, conferences, festivals, sports events,
+                corporate functions, or exhibitions.
+              </p>
+
+              <p>
+                Azania Shuttle Brokers acts as the single point of contact, coordinating verified shuttle operators to
+                deliver these services professionally.
+              </p>
+
+              <ul class="service-tags">
+                <li>Tours</li>
+                <li>Events</li>
+                <li>Conferences</li>
+              </ul>
+
+              <!-- <a href="#" class="service-link">
+              Explore this service →
+            </a> -->
+            </div>
+
           </div>
-          <p>Transport for tours, conferences and events.</p>
-          <a href="#" class="btn btn-service">Learn More →</a>
         </div>
-      </div>
 
-      <!-- Service 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card">
-          <div class="service-header">
-            <img src="images/icons/private-group.svg" alt="Private & Group">
-            <h5>Private & Group</h5>
+        <!-- Service 3: Private & Group Travel -->
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card">
+
+            <div class="service-image">
+              <img src="images/private-group.png" alt="Private and Group Travel Services">
+            </div>
+
+            <div class="service-body">
+              <div class="service-header">
+                <div class="service-icon">
+                  <span class="bi bi-people"></span>
+                </div>
+                <h5>Private & Group Travel</h5>
+              </div>
+
+              <p>
+                <b>Private travel</b>: Exclusive transport for individuals, families, executives, or VIPs.
+              </p>
+              <p>
+                <b>Group travel</b>: Transport for groups traveling together (friends, schools, churches, companies,
+                tourists).
+              </p>
+              <p>
+                Azania Shuttle Brokers does not just book rides — it manages the entire journey using vetted shuttle
+                operators.
+              </p>
+
+              <ul class="service-tags">
+                <li>Private Hire</li>
+                <li>Group Travel</li>
+                <li>Flexible Routes</li>
+              </ul>
+
+              <!-- <a href="#" class="service-link">
+              Explore this service →
+            </a> -->
+            </div>
+
           </div>
-          <p>Comfortable travel for individuals and groups.</p>
-          <a href="#" class="btn btn-service">Learn More →</a>
         </div>
-      </div>
 
-      <!-- Service 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card">
-          <div class="service-header">
-            <img src="images/icons/school-varsity.svg" alt="School & Varsity">
-            <h5>School & Varsity</h5>
+        <!-- Service 4: School & Varsity -->
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card">
+
+            <div class="service-image">
+              <img src="images/school-varsity.png" alt="School and Varsity Transport Services">
+            </div>
+
+            <div class="service-body">
+              <div class="service-header">
+                <div class="service-icon">
+                  <span class="bi bi-mortarboard"></span>
+                </div>
+                <h5>School & Varsity Transport</h5>
+              </div>
+
+              <p>
+                School transport: Daily learner transport between home and school.
+              </p>
+              <p>
+                Varsity transport: Student transport between residences, campuses, libraries, and activity centers.
+              </p>
+              <p>
+                Azania Shuttle Brokers operates as a trusted transport coordinator, ensuring learners and students are
+                moved safely, reliably, and compliantly.
+              </p>
+
+              <ul class="service-tags">
+                <li>Schools</li>
+                <li>Universities</li>
+                <li>Learner Safety</li>
+              </ul>
+
+              <!-- <a href="#" class="service-link">
+              Explore this service →
+            </a> -->
+            </div>
+
           </div>
-          <p>Safe and compliant learner transport.</p>
-          <a href="#" class="btn btn-service">Learn More →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section id="why" class="why-section">
+
+    <div class="container">
+      <h2 class="why-title text-center">
+        Why Choose Azania Shuttle Brokers?
+      </h2>
+    </div>
+
+    <!-- TRUST BAR (FLOATING CARD) -->
+    <div class="trust-bar-wrapper">
+      <div class="container">
+        <div class="row g-0 trust-bar">
+
+          <!-- Trusted Network -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="trust-item trust-1">
+              <div class="trust-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="trust-content">
+                <h6>Trusted Network</h6>
+                <p>Access to vetted, licensed shuttle operators</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strict Compliance -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="trust-item trust-2">
+              <div class="trust-icon">
+                <i class="bi bi-file-earmark-check"></i>
+              </div>
+              <div class="trust-content">
+                <h6>Strict Compliance</h6>
+                <p>Fully licensed, insured and roadworthy vehicles</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nationwide Coverage -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="trust-item trust-3">
+              <div class="trust-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="trust-content">
+                <h6>Nationwide Coverage</h6>
+                <p>One broker for transport across South Africa</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Easy Coordination -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="trust-item trust-4">
+              <div class="trust-icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div class="trust-content">
+                <h6>Easy Coordination</h6>
+                <p>Centralised bookings and trip management</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+
+
+    <!-- TESTIMONIALS PANEL -->
+    <div class="testimonials-panel py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <span class="about-eyebrow">TESTIMONIALS</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">
+            Trusted by organisations, schools, and private clients across South Africa.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Testimonial 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card animate animate-delay-1">
+
+              <div class="testimonial-header">
+                <div class="testimonial-icon">
+                  <i class="bi bi-person-circle"></i>
+                </div>
+                <span class="testimonial-person-name">Thabo M.</span>
+              </div>
+
+              <p class="testimonial-quote">
+                “Reliable, safe, and always on time! They made our employees commute stress-free. Coordination and
+                communication is exceptional — we never worry about late pickups.”
+              </p>
+
+              <span class="testimonial-role">HR Manager (Corporate Client)</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card animate animate-delay-2">
+
+              <div class="testimonial-header">
+                <div class="testimonial-icon">
+                  <i class="bi bi-person-circle"></i>
+                </div>
+                <span class="testimonial-person-name">Lindiwe S.</span>
+              </div>
+
+              <p class="testimonial-quote">
+                “Reliable, safe, and always on time! Azania Shuttle Brokers has made our employees’ commute stress-free.
+                Their coordination and communication are exceptional — we never worry about late pickups.”
+              </p>
+
+              <span class="testimonial-role">Private Travel Customer</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card animate animate-delay-3">
+
+              <div class="testimonial-header">
+                <div class="testimonial-icon">
+                  <i class="bi bi-person-circle"></i>
+                </div>
+                <span class="testimonial-person-name">Mrs. Patel.</span>
+              </div>
+
+              <p class="testimonial-quote">
+                “Azania Shuttle Brokers handled transport for our school learners with great care. The drivers were patient, and the service was extremely reliable. Parents appreciate the regular updates.”
+              </p>
+
+              <span class="testimonial-role">School Administrator</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="testimonial-card animate animate-delay-4">
+
+              <div class="testimonial-header">
+                <div class="testimonial-icon">
+                  <i class="bi bi-person-circle"></i>
+                </div>
+                <span class="testimonial-person-name">Riaan D.</span>
+              </div>
+
+              <p class="testimonial-quote">
+                “For our conference last month, Azania managed shuttles for over 200 guests — flawlessly. Their planning and on-ground coordination removed all transport stress from our event management team.”
+              </p>
+
+              <span class="testimonial-role">Event Organizer</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section section-padding">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="section-eyebrow">Contact</span>
+      <h2 class="section-title text-white">Get in Touch</h2>
+      <p class="section-subtitle text-light">
+        Speak to us for professional shuttle coordination across South Africa.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 mb-5">
+
+        <div class="contact-card">
+
+          <!-- Contact details -->
+          <div class="contact-details">
+
+            <div class="contact-row">
+              <i class="bi bi-envelope"></i>
+              <span>info@azaniashuttlebrokers.co.za</span>
+            </div>
+
+            <div class="contact-row">
+              <i class="bi bi-telephone"></i>
+              <span>+27 78 200 0946</span>
+            </div>
+
+            <div class="contact-row">
+              <i class="bi bi-whatsapp"></i>
+              <span>WhatsApp: +27 73 923 2568</span>
+            </div>
+
+          </div>
+
+          <!-- Social icons -->
+          <div class="contact-socials">
+            <a
+              href="https://wa.me/27739232568"
+              target="_blank"
+              class="social-icon"
+              aria-label="WhatsApp"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/14W7647PYuA/"
+              target="_blank"
+              class="social-icon"
+              aria-label="Facebook"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
 
-  <!-- ================= WHY CHOOSE US ================= -->
+<!-- ================= FOOTER ================= -->
+<footer class="footer-section">
+  <div class="container">
 
-  
+    <div class="row gy-4 align-items-center">
 
-  <section id="why" class="why-section text-white">
-    <div class="container">
-      <h2 class="text-center mb-5">Why Choose Azania Shuttle Brokers?</h2>
-
-      <!-- ================= TRUST BAR ================= -->
-  <section class=""> <!--CLASS OF "TRUST-BAR" WAS REMOVED -->
-    <div class="container">
-      <div class="row g-0">
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="trust-item trust-1">
-            <div class="trust-icon">
-              <img src="images/icons/trusted-network.svg" alt="">
-            </div>
-            <div class="trust-content">
-              <h6>Trusted Network</h6>
-              <p>Access to vetted, licensed shuttle operators</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="trust-item trust-2">
-            <div class="trust-icon">
-              <img src="images/icons/compliance.svg" alt="">
-            </div>
-            <div class="trust-content">
-              <h6>Strict Compliance</h6>
-              <p>Fully licensed, insured and roadworthy vehicles</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="trust-item trust-3">
-            <div class="trust-icon">
-              <img src="images/icons/nationwide.svg" alt="">
-            </div>
-            <div class="trust-content">
-              <h6>Nationwide Coverage</h6>
-              <p>One broker for transport across South Africa</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="trust-item trust-4">
-            <div class="trust-icon">
-              <img src="images/icons/coordination.svg" alt="">
-            </div>
-            <div class="trust-content">
-              <h6>Easy Coordination</h6>
-              <p>Centralised bookings and trip management</p>
-            </div>
-          </div>
-        </div>
-
+      <div class="col-md-6">
+        <p class="footer-text">
+          © <span id="year"></span> Azania Shuttle Brokers. All rights reserved.
+        </p>
+        <p class="footer-disclaimer">
+          Azania Shuttle Brokers operates as a transport brokerage, connecting clients
+          with verified, licensed shuttle service providers. We do not own or operate
+          transport vehicles directly.
+        </p>
       </div>
-    </div>
-  <!-- </section>
 
-      <div class="row gy-4 text-center">
-        <div class="col-md-3">Trusted Drivers</div>
-        <div class="col-md-3">Compliance First</div>
-        <div class="col-md-3">Nationwide Reach</div>
-        <div class="col-md-3">One Point of Contact</div>
+      <div class="col-md-6 text-md-end">
+        <p class="footer-text">
+          This Website was Developed by <a href="https://www.africonnectsolutions.co.za" target="_blank"
+                        rel="noopener" style="color: #ABD561">Africonnect Solutions</a>
+        </p>
       </div>
-    </div>
-  </section> -->
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="section-padding">
-    <div class="container text-center">
-      <h2>Get in Touch</h2>
-      <p>info@azaniashuttlebrokers.co.za | 078 200 0946</p>
     </div>
-  </section>
+
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
