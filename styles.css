@@ -152,7 +152,7 @@ body {
 
   /* CTA buttons */
   .hero-actions {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 12px;
