@@ -97,21 +97,75 @@ body {
   color: #ffffff;
 }
 
-/* Responsive tuning */
-@media (max-width: 991px) {
+/* ================= HERO MOBILE REFINEMENT ================= */
+
+@media (max-width: 767px) {
+
+  /* Stop flex centering at section level */
+  .hero-section {
+    min-height: 90vh;
+    background-position: center right;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block; /* CRITICAL FIX */
+  }
+
+  /* Override Bootstrap align-items-center (!important required) */
+  .hero-section .row {
+    align-items: flex-start !important;
+  }
+
+  /* Push content down from top */
+  .hero-content {
+    padding-top: 56px;
+  }
+
+  /* Eyebrow */
+  .hero-eyebrow {
+    display: inline-block;
+    margin-top: 100px;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center !important;
+  }
+
+  /* Heading */
   .hero-title {
-    font-size: 2.8rem;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-top: 30px;
   }
 
-  .hero-text {
-    font-size: 1rem;
+  .hero-title span {
+    text-align: center;
+    display: block;
+    font-size: 1.9rem;
+    margin-top: 10px;
   }
 
+  /* Hide long paragraph */
+  .hero-text-desktop {
+    display: none;
+  }
+
+  /* CTA buttons */
   .hero-actions {
+    margin-top: 100px;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    font-size: 0.95rem;
+    padding: 11px 20px;
   }
 }
+
+
+
 
 /* ================= HERO TEXT ANIMATION ================= */
 
